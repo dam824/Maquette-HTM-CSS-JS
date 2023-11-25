@@ -1,0 +1,580 @@
+body{
+    margin-right: 30px;
+    margin-left: 30px;
+}
+
+
+h2{
+    font-size:2rem;
+    font-weight: 400;
+    color: rgb(92, 91, 91);
+    margin-bottom: 10px;
+    
+}
+
+p{
+    font-size: 1.4rem;
+    font-weight: 300;
+    margin-top: 0;
+    max-width: 80%;
+}
+
+li{
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+    font-size: 1rem;
+    color: black
+}
+
+a:hover{
+    color:rgb(37, 188, 143);
+}
+
+header{
+    position: relative;
+    padding: 0 2rem;
+}
+
+.navbar {
+    width: 100%;
+    height: 60px; 
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-top: solid 4px rgb(26, 232, 180); 
+    padding: 0 20px;
+}
+
+.navbar ul {
+    margin: 0;
+    display: flex;
+    gap: 2rem; 
+}
+
+.navbar ul li {
+    list-style: none;
+}
+
+.navbar ul li a {
+    text-decoration: none;
+    font-size: 1rem;
+    color: black;
+    padding: 0 20px;  
+    line-height: 60px;  
+    display: block;
+    transition: background-color 0.3s;
+    margin: 0 5px;
+}
+
+.navbar ul li:hover a {
+    color: rgb(254, 254, 254);  
+    background-color: rgb(26, 232, 180); ;  
+}
+
+
+
+.navbar .logo a {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.navbar .links{
+    display: flex;
+    gap: 2rem;
+}
+
+
+
+
+
+
+/* telephone */
+.phone-container {
+    display: flex;
+    align-items: center; 
+  }
+  
+  .phone-icon {
+    background-color: rgb(26, 232, 180);  
+    border-radius: 20px;
+    width: 20px;  
+    height: 20px;  
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 10px;  
+  }
+  .phone-icon img {
+    width: 10px;
+    height: auto;
+  }
+  
+  .phone-number {
+    font-weight: 300;
+    font-size: 1rem;  
+  }
+
+/* boutton buger  */
+.navbar .toggle_btn {
+    color: rgb(37, 188, 143);
+    font-size: 1.5rem;
+    cursor: pointer;
+    display: none;
+}
+
+.action_btn {
+    background-color: rgb(37, 188, 143);
+    color: #fff;
+    padding: 0.5rem 1rem;
+    border: none;
+    outline: none;
+    border-radius: 20px;
+    font-size: 0.8rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: scale 0.2 ease;
+}
+
+.action_btn:hover{
+    scale: 1.05;
+    color: #fff;
+}
+
+.action_btn:active{
+    scale: 0.95;
+}
+
+/* dropdown menu */
+.dropdown_menu{
+    display:block;
+    position: absolute;
+    right: 2rem;
+    top: 60px;
+    height:  0;
+    width: 150px;
+    background: rgba(26, 232, 181, 0.456); 
+    backdrop-filter: blur(15px);
+    border-radius: 10px;
+    overflow: hidden;
+    transition: height 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    
+}
+
+.dropdown_menu.open{
+    height: 220px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    
+}
+
+.dropdown_menu li{
+    padding: 0.7rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.dropdown_menu a {
+    color: white
+}
+
+.dropdown_menu .action_btn{
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+}
+
+
+
+
+/* slider */
+.slider {
+    width: auto;
+    max-width: 100%;
+    margin: auto;
+    overflow: hidden;
+    max-height: 80vh;
+}
+
+.slider .item {
+    position: relative;
+    text-align: left;
+    color: white;
+}
+
+.slider .item img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.slider .content {
+    position: absolute;
+    top: 20%;
+    left: 10%;  
+    max-width: 500px;  
+}
+
+.slider h1 {
+    margin-bottom: 10px;
+}
+
+.slider p {
+    margin-bottom: 20px;
+    white-space: nowrap;
+    overflow: hidden;
+    max-width: 90%;
+}
+
+.slider button {
+    background: transparent;
+    color: white;
+    border: 2px solid white;
+    border-radius: 20px;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+.header-title{
+    background-color: rgba(0, 0, 0, 0.278);
+    margin: 4px;
+    display: inline-block;
+}
+
+/* teacher section  */
+.teachers-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+    
+}
+
+
+
+
+
+/* cards */
+.cards {
+    display: flex;
+    justify-content: space-around;  
+    flex-wrap: wrap;  
+    margin-top: 20px;
+    margin-bottom: 30px;
+    margin-right: 70px;
+    margin-left: 70px;
+}
+
+.card {
+    flex-basis: 22%;  
+    margin: 10px; 
+    box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+    background-color: white;
+}
+
+.card img {
+    width: 100%;
+    height: auto;
+    display: block; 
+}
+
+.card-container {
+    padding: 10px;
+    text-align: left;  
+}
+
+.card-container h4, .card-container p {
+    margin: 5px 0;
+    
+}
+
+.social-icons {
+    display: flex;
+    justify-content: center;  
+    padding-top: 10px;
+}
+
+.social-icons a {
+    text-decoration: none;
+    color: inherit;  
+    margin: 0 10px;  
+}
+
+.bg-grey{
+    background-color: rgba(128, 128, 128, 0.212);
+    padding-bottom: 40px;
+}
+
+/* card cours  */
+.carou{
+    margin-right: 100px;
+    margin-left: 100px;
+    
+}
+
+.course-carousel .course-card {
+    background-color: rgb(247, 245, 245);
+    width: 270px;
+}
+
+
+
+
+
+.course-image-container {
+  position: relative;
+}
+
+.course-image{
+    width:100%;
+    height: auto;
+    display: block;
+}
+
+.course-info {
+    padding: 15px;
+}
+
+.course-date-time {
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    background-color: rgba(148, 148, 148, 0);  
+    color: white;
+    padding: 5px;
+    border-radius: 5px;
+    font-size: 0.8em;
+}
+
+.course-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+}
+
+.teacher-info {
+    display: flex;
+    align-items: center;
+}
+
+.teacher-image {
+    border-radius: 20px;
+    width: 40px;
+    height: 40px;
+    margin-right: 10px;
+}
+
+.btn {
+    padding: 10px 10px;
+    border: none;
+    border-radius: 2px;
+    color: white;
+    cursor: pointer;
+}
+
+.free {
+    background-color: rgb(64, 0, 255);
+}
+
+.paid {
+    background-color: rgb(58, 216, 150);
+}
+
+
+/* formulaire */
+
+.form-container {
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+    background-color: rgb(61, 61, 176);
+    bottom: 0;
+    padding: 70px;
+}
+
+.form-style {
+    flex: 1;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.form-style h2,
+.form-style p {
+    color: white
+}
+
+.form-style h2,
+.form-style p,
+.form-style form {
+    margin: 0 0 20px 0;
+}
+
+input::placeholder,
+textarea::placeholder {
+    color: rgb(194, 194, 194);
+}
+
+.form-style input,
+.form-style textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #777575;
+    border-radius: 5px;
+}
+
+.form-style button {
+    width: 50%;
+    padding: 10px;
+    border-radius: 20px;
+    border: none;
+    background-color: #fefeff;
+    color: rgb(0, 0, 0);
+    cursor: pointer;
+}
+
+.img-contact {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.img-contact img {
+    width: 100%;
+    height: auto;
+}
+
+/* footer */
+
+footer {
+    background-color: #3e3e3e;
+    color: white;
+    padding: 20px 0;
+
+    
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-around;  
+}
+
+
+.footer-column h4 {
+    font-size: 1.5rem;
+}
+
+.footer-column p {
+    font-size: 0.8rem;
+}
+
+.newsletter-signup {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #5a5a5a00;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+    white-space: nowrap;
+    font-size: 1.5rem;
+}
+
+.newsletter-signup:hover {
+    background-color: #787878;
+}
+
+/* Responsive cards  */
+@media (max-width: 800px) {
+    .cards {
+        flex-direction: column;
+        align-items: center;
+        margin-right: 10px;
+        margin-left: 10px;
+    }
+
+    .card {
+        width: 90%;
+        margin: 10px;
+    }
+
+    /* respon form */
+    .form-container {
+        flex-direction: column-reverse;
+        align-items: center;
+        text-align: center;
+    }
+
+    .img-contact {
+        order: -1; /* ordre des éléments image au-dessus */
+        margin-top: 20px; /*  marge pour séparer l'image du formulaire */
+    }
+
+    /* Styles pour le footer en responsive */
+    .footer-container {
+        flex-direction: column;  
+        align-items: center;  
+    }
+}
+
+
+
+
+/* Responsive cards */
+@media (max-width: 800px) {
+    .cards {
+        flex-direction: column;
+        align-items: center; 
+        margin-right: 10px;
+        margin-left: 10px;
+    }
+
+    .card {
+        width: 90%;
+        margin: 10px; 
+    }
+}
+
+
+/* responsive navbar   */
+
+@media(max-width: 800px){
+    .navbar .links,
+    .navbar .action_btn, .phone-container{
+        display:none;
+    }
+
+    .navbar .toggle_btn{
+        display: block;
+    }
+    .dropdown_menu{
+        left: 2rem;
+        width: unset;
+        z-index: 50;
+    }
+
+}
+
+@media(max-width: 500px){
+    .dropdown_menu{
+        left: 2rem;
+        width: unset;
+        z-index: 50;
+    }
+
+}
+
+
+
+
+
